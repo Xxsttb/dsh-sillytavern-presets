@@ -1,0 +1,8 @@
+# Bundle patch for dsh-sillytavern-presets.
+#
+# The `id` is the profile entry id. This plugin has no Config schema of its
+# own: everything it needs is managed from its dedicated Settings page, so no
+# settings namespace is registered and the row carries no `config` block.
+- insert:
+    - id: sillytavern-presets
+      name: 'dsh-sillytavern-presets'

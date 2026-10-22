@@ -1,0 +1,65 @@
+{
+  "name": "dsh-sillytavern-presets",
+  "version": "1.0.7",
+  "private": true,
+  "description": "DeepSeek Harness plugin that imports, edits, stores and applies SillyTavern AI presets as switchable AI preset layers, with export, archive and delete support. AI-made.",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xxsttb/dsh-sillytavern-presets.git"
+  },
+  "homepage": "https://github.com/Xxsttb/dsh-sillytavern-presets#readme",
+  "bugs": {
+    "url": "https://github.com/Xxsttb/dsh-sillytavern-presets/issues"
+  },
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    },
+    "engines": {
+      "dsh": ">=0.2.0-rc.2"
+    }
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "sillytavern",
+    "preset",
+    "roleplay"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.4",
+    "@deepseek-ai/dsh-host-webserver": ">=0.2.0-rc.2",
+    "@deepseek-ai/dsh-client-locale": ">=0.2.0-rc.2",
+    "@deepseek-ai/dsh-client-ui-settings": ">=0.2.0-rc.2",
+    "react": "^18.2.0"
+  }
+}

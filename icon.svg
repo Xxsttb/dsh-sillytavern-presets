@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="SillyTavern presets">
+  <defs>
+    <linearGradient id="stp-accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4d6bfe"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0f1115"/>
+  <g transform="translate(13 11)">
+    <rect x="7" y="0" width="30" height="38" rx="5" fill="#1b2030" stroke="#3b4a74" stroke-width="1.4"/>
+    <rect x="0" y="5" width="30" height="38" rx="5" fill="#151a26" stroke="url(#stp-accent)" stroke-width="1.6"/>
+    <path d="M7 15h16M7 21h16M7 27h11" stroke="#c7d2fe" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M22 36l3.2-7.4 1.5 4.1 4.1 1.5L23.4 37.4 22 41.5z" fill="url(#stp-accent)"/>
+  </g>
+  <circle cx="50" cy="15" r="3.2" fill="url(#stp-accent)"/>
+</svg>
